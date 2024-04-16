@@ -1,0 +1,19 @@
+// Programa para ler um valor e informar se é par
+
+// Função para verificar se o valor é par
+function verificarPar(valor) {
+    return valor % 2 === 0;
+}
+
+// Função principal
+function main() {
+    const valor = parseInt(prompt("Digite um valor:"));
+
+    if (verificarPar(valor)) {
+        console.log("O valor é par.");
+    } else {
+        console.log("O valor é ímpar.");
+    }
+}
+
+main();
