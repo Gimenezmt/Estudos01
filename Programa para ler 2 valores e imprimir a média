@@ -1,0 +1,22 @@
+// Programa para ler 2 valores e imprimir a média
+
+// Função para calcular a média dos valores
+function calcularMedia(valores) {
+    const soma = valores.reduce((total, valor) => total + valor, 0);
+    return soma / valores.length;
+}
+
+// Função principal
+function main() {
+    const valores = [];
+    for (let i = 1; i <= 2; i++) {
+        const valor = parseFloat(prompt(`Digite o ${i}º valor:`));
+        valores.push(valor);
+    }
+
+    const media = calcularMedia(valores);
+
+    console.log("A média dos valores é:", media);
+}
+
+main();
